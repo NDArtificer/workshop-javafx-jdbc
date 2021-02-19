@@ -30,3 +30,7 @@ hs_err_pid*
  nbbuild/
  dist/
  nbdist/ 
+/bin/
+
+#Eclipse
+.settings/
