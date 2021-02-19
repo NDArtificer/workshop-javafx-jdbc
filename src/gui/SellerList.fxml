@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerListController">
+   <children>
+      <Label alignment="TOP_LEFT" prefHeight="0.0" prefWidth="379.0" text="Seller Registration">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ToolBar prefHeight="0.0" prefWidth="379.0">
+        <items>
+          <Button fx:id="btnNew" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onBtnNewAction" text="New" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewSeller" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="75.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
